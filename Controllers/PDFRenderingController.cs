@@ -9,7 +9,7 @@ namespace PDFRendering.Controllers
 {
     public class PDFRenderingController : Controller
     {
-        // GET: PDFRenderiing
+        // GET: PDFRenderiing  
         public ActionResult Index()
         {
             return View("Home");
