@@ -107,6 +107,8 @@
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
     <Content Include="Views\PDFRendering\PDFResult.cshtml" />
+    <Content Include="Views\PDFRendering\Home.cshtml" />
+    <Content Include="PDF\Test.pdf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

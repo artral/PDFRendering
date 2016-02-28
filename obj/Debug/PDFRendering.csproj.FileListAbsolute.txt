@@ -28,6 +28,5 @@ C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Webpages.Deployment.xml
 C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Webpages.Razor.xml
 C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Helpers.xml
 C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Mvc.xml
-C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.csprojResolveAssemblyReference.cache
 C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.dll
 C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.pdb

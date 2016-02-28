@@ -12,15 +12,15 @@ namespace PDFRendering.Controllers
         // GET: PDFRenderiing
         public ActionResult Index()
         {
-            var path = @"C:\Temp\Mobile.pdf";// Server.MapPath(@"C:\Temp\Mobile.pdf");
-            var pdfBuffer = ExtensionsHelper.ExtensionsHelper.GetPDFMemerySteram(path);
-            //return View("PDFResult");
-           // return File(pdfBuffer, "application/pdf");
-            return new PDFContentResult(pdfBuffer);
+            return View("Home");
         }
         public ActionResult PDFResult()
         {
-            return View("");
+            var path =  Server.MapPath(@"\PDF\Test.pdf");
+            var pdfBuffer = ExtensionsHelper.ExtensionsHelper.GetPDFMemerySteram(path);
+            //return View("PDFResult");
+            // return File(pdfBuffer, "application/pdf");
+            return new PDFContentResult(pdfBuffer);
         }
     }
 }
