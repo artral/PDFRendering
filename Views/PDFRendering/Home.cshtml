@@ -1,6 +1,6 @@
 ﻿
 @{
-    Layout = null;
+    Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
 <!DOCTYPE html>
@@ -11,9 +11,9 @@
     <title>Report</title>
 </head>
 <body>
-    <div> 
-       <a href="@Url.Action("PDFResult", "PDFRendering")" target="_blank"> <span> Bill</span></a>
-       
+    <div>
+        <a href="@Url.Action("PDFResult", "PDFRendering")" target="_blank"> <span> Bill</span></a>
+
     </div>
 </body>
 </html>
