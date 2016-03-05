@@ -31,3 +31,10 @@ C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Mvc.xml
 C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.csprojResolveAssemblyReference.cache
 C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.dll
 C:\Projects\PDFRendering\PDFRendering\obj\Debug\PDFRendering.pdb
+C:\Projects\PDFRendering\PDFRendering\bin\Antlr3.Runtime.dll
+C:\Projects\PDFRendering\PDFRendering\bin\Newtonsoft.Json.dll
+C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Optimization.dll
+C:\Projects\PDFRendering\PDFRendering\bin\WebGrease.dll
+C:\Projects\PDFRendering\PDFRendering\bin\Antlr3.Runtime.pdb
+C:\Projects\PDFRendering\PDFRendering\bin\Newtonsoft.Json.xml
+C:\Projects\PDFRendering\PDFRendering\bin\System.Web.Optimization.xml
