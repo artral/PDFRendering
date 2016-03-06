@@ -10,6 +10,8 @@ namespace PDFRendering
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
+            BundleTable.EnableOptimizations = false;
+ 
             bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
@@ -19,8 +21,8 @@ namespace PDFRendering
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                         "~/Scripts/knockout-{version}.js"));
 
-            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-            //            "~/Scripts/modernizr-*"));
+            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+                        "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
@@ -30,11 +32,11 @@ namespace PDFRendering
                       "~/Content/bootstrap.css"));
 
             //Project Specific
-            bundles.Add(new ScriptBundle("~/bundles/Helper").Include(
+            bundles.Add(new StyleBundle("~/bundles/Helper").Include(
                      "~/Scripts/Helper/SPAHandler.js",
                      "~/Scripts/Helper/SPAWindow.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/PDFRendering").Include(
+            bundles.Add(new StyleBundle("~/bundles/PDFRendering").Include(
                      "~/Scripts/PDFRendering/PDFHandler.js"));
 
         }

@@ -16,10 +16,8 @@ namespace PDFRendering.Controllers
         }
         public ActionResult PDFResult()
         {
-            var path =  Server.MapPath(@"\PDF\Test.pdf");
+            var path = Server.MapPath(@"\PDFRendering\App_Data\PDF\Test.pdf");
             var pdfBuffer = ExtensionsHelper.ExtensionsHelper.GetPDFMemerySteram(path);
-            //return View("PDFResult");
-            // return File(pdfBuffer, "application/pdf");
             return new PDFContentResult(pdfBuffer);
         }
     }
