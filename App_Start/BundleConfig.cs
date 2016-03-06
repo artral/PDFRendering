@@ -19,8 +19,8 @@ namespace PDFRendering
             bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
                         "~/Scripts/knockout-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
+            //bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
+            //            "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
@@ -28,6 +28,15 @@ namespace PDFRendering
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css"));
+
+            //Project Specific
+            bundles.Add(new ScriptBundle("~/bundles/Helper").Include(
+                     "~/Scripts/Helper/SPAHandler.js",
+                     "~/Scripts/Helper/SPAWindow.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/PDFRendering").Include(
+                     "~/Scripts/PDFRendering/PDFHandler.js"));
+
         }
 
     }
