@@ -7,17 +7,20 @@
     <script src="@Url.Content("~/bundles/jquery")"></script>
     <script src="@Url.Content("~/bundles/bootstrap")"></script>
     <script src="@Url.Content("~/bundles/knockout")"></script>
-    <script src="@Url.Content("~/bundles/modernizr")"></script>
+    <script src="@Url.Content("~/bundles/Helper")"></script>
+    <script src="@Url.Content("~/bundles/PDFRendering")"></script>
+    @*<script src="@Url.Content("~/bundles/modernizr")"></script>*@
 </head>
 <body>
     <ul id="menu">
-        <li>@Html.ActionLink("Home", "Index", "Home")</li>
-        <li>@Html.ActionLink("Movies", "Index", "Movies")</li>
-        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("View PDF", "Index", "PDFRendering",new { id="newpdf"})</li>
+        <li>@Html.ActionLink("OpenPDF", "PDFResult", "PDFRendering", new { id = "OpenPDF" })</li>
+        <li>@Html.ActionLink("About", "About", "Home", new { id = "OpenPDF" })</li>
     </ul>
     <section id="main">
+        <p>Hahaaha:)</p>
         @RenderBody()
-        <p>Copyright W3schools 2012. All Rights Reserved.</p>
+
     </section>
 </body>
 </html>
