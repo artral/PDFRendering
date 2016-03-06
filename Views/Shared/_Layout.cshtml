@@ -2,14 +2,12 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    @Styles.Render("~/PDFRendering/css")
+   
+
     <title>@ViewBag.Title</title>
-    <link href="@Url.Content("~/Content/css")" rel="stylesheet" type="text/css" />
-    <script src="@Url.Content("~/bundles/jquery")"></script>
-    <script src="@Url.Content("~/bundles/bootstrap")"></script>
-    <script src="@Url.Content("~/bundles/knockout")"></script>
-    <script src="@Url.Content("~/bundles/Helper")"></script>
-    <script src="@Url.Content("~/bundles/PDFRendering")"></script>
-    @*<script src="@Url.Content("~/bundles/modernizr")"></script>*@
+  
+    
 </head>
 <body>
     <ul id="menu">
@@ -19,8 +17,14 @@
     </ul>
     <section id="main">
         <p>Hahaaha:)</p>
-        @RenderBody()
-
+       
     </section>
+    @RenderBody()
+    @Scripts.Render("~/PDFRendering/jquery")
+    @Scripts.Render("~/PDFRendering/bootstrap")
+    @Scripts.Render("~/PDFRendering/knockout")
+    @Scripts.Render("~/PDFRendering/Helpers")
+    @Scripts.Render("~/PDFRendering/ProjectHelpers")
+    @Scripts.Render("~/PDFRendering/modernizr")
 </body>
 </html>

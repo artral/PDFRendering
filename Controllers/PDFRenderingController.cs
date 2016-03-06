@@ -14,6 +14,10 @@ namespace PDFRendering.Controllers
         {
             return View("Home");
         }
+        public ActionResult DownLoadPDF()
+        {
+            return View("Home");
+        }
         public ActionResult PDFResult()
         {
             var path = Server.MapPath(@"\PDFRendering\App_Data\PDF\Test.pdf");

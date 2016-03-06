@@ -10,34 +10,38 @@ namespace PDFRendering
     {
         public static void RegisterBundles(BundleCollection bundles)
         {
-            BundleTable.EnableOptimizations = false;
- 
-            bundles.Add(new ScriptBundle("~/bundles/jquery").Include(
+            bundles.Add(new StyleBundle("~/PDFRendering/css").Include(
+                         "~/Content/bootstrap.css"));
+
+            bundles.Add(new ScriptBundle("~/PDFRendering/jquery").Include(
                         "~/Scripts/jquery-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
+            bundles.Add(new ScriptBundle("~/PDFRendering/jqueryval").Include(
                         "~/Scripts/jquery.validate*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/knockout").Include(
+            bundles.Add(new ScriptBundle("~/PDFRendering/knockout").Include(
                         "~/Scripts/knockout-{version}.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/modernizr").Include(
-                        "~/Scripts/modernizr-*"));
 
-            bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
+
+            bundles.Add(new ScriptBundle("~/PDFRendering/bootstrap").Include(
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css"));
+
 
             //Project Specific
-            bundles.Add(new StyleBundle("~/bundles/Helper").Include(
+            bundles.Add(new ScriptBundle("~/PDFRendering/Helpers").Include(
                      "~/Scripts/Helper/SPAHandler.js",
                      "~/Scripts/Helper/SPAWindow.js"));
 
-            bundles.Add(new StyleBundle("~/bundles/PDFRendering").Include(
-                     "~/Scripts/PDFRendering/PDFHandler.js"));
+            bundles.Add(new ScriptBundle("~/PDFRendering/ProjectHelpers").Include(
+                   "~/Scripts/PDFRendering/PDFHandler.js"));
+
+
+
+            bundles.Add(new ScriptBundle("~/PDFRendering/modernizr").Include(
+                       "~/Scripts/modernizr-*"));
 
         }
 

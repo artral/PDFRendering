@@ -7,4 +7,4 @@
     });
 
 
-})(window.spa = window.spa || {}, jQuery);
+}(window.spa = window.spa || {}, jQuery));
