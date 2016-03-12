@@ -116,6 +116,7 @@
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Helper\EventManager.js" />
     <Content Include="Scripts\Helper\SPAHandler.js" />
     <Content Include="Scripts\Helper\SPAWindow.js" />
     <Content Include="Scripts\jquery-2.2.1.js" />

@@ -1,4 +1,6 @@
-﻿(function (spa, $) {
+﻿/// <reference path="../jquery-2.2.1.js" />
+/// <reference path="../jquery.validate.js" />
+(function (spa, $) {
 
     $("#TestH").submit(function (event) {
 
