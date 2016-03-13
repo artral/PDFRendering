@@ -1,5 +1,7 @@
 ﻿/// <reference path="../jquery-2.2.1.js" />
 /// <reference path="../jquery.validate.js" />
+/// <reference path="underscore.js" />
+
 (function (spa, $) {
 
     /*http://stackoverflow.com/questions/881515/how-do-i-declare-a-namespace-in-javascript*/
@@ -36,4 +38,4 @@
             
         }
     });
-}(window.spa = window.spa || {}, jQuery));
+})(window.spa = window.spa || {}, jQuery);

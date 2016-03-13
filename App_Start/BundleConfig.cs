@@ -33,7 +33,11 @@ namespace PDFRendering
             //Project Specific
             bundles.Add(new ScriptBundle("~/PDFRendering/Helpers").Include(
                      "~/Scripts/Helper/SPAHandler.js",
-                     "~/Scripts/Helper/SPAWindow.js"));
+                     "~/Scripts/Helper/SPAHandler.js",
+                     "~/Scripts/Helper/underscore.js",
+                     "~/Scripts/Helper/EventManager.js"));
+
+         
 
             bundles.Add(new ScriptBundle("~/PDFRendering/ProjectHelpers").Include(
                    "~/Scripts/PDFRendering/PDFHandler.js"));

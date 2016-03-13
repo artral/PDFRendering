@@ -119,6 +119,7 @@
     <Content Include="Scripts\Helper\EventManager.js" />
     <Content Include="Scripts\Helper\SPAHandler.js" />
     <Content Include="Scripts\Helper\SPAWindow.js" />
+    <Content Include="Scripts\Helper\underscore.js" />
     <Content Include="Scripts\jquery-2.2.1.js" />
     <Content Include="Scripts\jquery-2.2.1.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />

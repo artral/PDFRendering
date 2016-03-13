@@ -2,6 +2,7 @@
 /// <reference path="../jquery.validate.js" />
 (function (spa, $) {
 
+    
     $("#TestH").submit(function (event) {
 
         aspa.LogThistoConsole("Nice");
@@ -9,4 +10,4 @@
     });
 
 
-}(window.spa = window.spa || {}, jQuery));
+})(window.spa = window.spa || {}, jQuery);
